@@ -15,16 +15,24 @@ Para configuração do site só seguir os passos abaixo:
 `# MYSQL`
 
 `DB_HOST = xxxxx`
+
 `DB_USER = xxxxx`
+
 `DB_PASSWORD = xxxxx`
+
 `DB_DATABASE = xxxxx`
+
 
 `# SMTP` 
 
 `SMTP_HOST = xxxxx`
+
 `SMTP_PORT = xxxxx`
+
 `SMTP_USER = xxxxx`
+
 `SMTP_PASSWORD = xxxxx`
+
 
 4. Logo após irá abrir um terminal CMD apontado para a pasta 'server' e outro CMD apontado para a pasta 'cliente' e irá dar um 'npm start' nos dois para iniciar a aplicação.
 
