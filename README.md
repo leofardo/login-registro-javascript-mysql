@@ -6,11 +6,13 @@ Sistema de Login feito completamente com Javascript no back-end (Node JS), front
 
 Para configuração do site só seguir os passos abaixo:
 
-1. Irá precisar criar um banco de dados e uma tabelas utilizando MySQL Workbench. O SQL para criação do banco de dados e a tabela está no arquivo 'mysql.sql'
+1. Irá instalar as dependências 'node_modules', uma dentro da pasta cliente e outra dentro da pasta server.
 
-2. Na pasta 'server' irá criar um arquivo chamado .env, nele terá as informações de acesso ao banco de dados e à conta SMTP, irá copiar o código abaixo e colar nesse arquivo .env e irá alterar os dados.
+2. Irá precisar criar um banco de dados e uma tabelas utilizando MySQL Workbench. O SQL para criação do banco de dados e a tabela está no arquivo 'mysql.sql'
 
-3. Irá acessar o site https://ethereal.email/ para ter acesso a dados um SMTP fake para envio de emails e irá colar nas variaveis do arquivo .env também. OBS: Se caso tiver um SMTP proprio só colocar os dados nas variáveis tambem. Código para o arquivo .env abaixo:
+3. Na pasta 'server' irá criar um arquivo chamado .env, nele terá as informações de acesso ao banco de dados e à conta SMTP, irá copiar o código abaixo e colar nesse arquivo .env e irá alterar os dados.
+
+4. Irá acessar o site https://ethereal.email/ para ter acesso a dados um SMTP fake para envio de emails e irá colar nas variaveis do arquivo .env também. OBS: Se caso tiver um SMTP proprio só colocar os dados nas variáveis tambem. Código para o arquivo .env abaixo:
 
 `# MYSQL`
 
@@ -34,9 +36,9 @@ Para configuração do site só seguir os passos abaixo:
 `SMTP_PASSWORD = xxxxx`
 
 
-4. Logo após irá abrir um terminal CMD apontado para a pasta 'server' e outro CMD apontado para a pasta 'cliente' e irá dar um 'npm start' nos dois para iniciar a aplicação.
+5. Logo após irá abrir um terminal CMD apontado para a pasta 'server' e outro CMD apontado para a pasta 'cliente' e irá dar um 'npm start' nos dois para iniciar a aplicação.
 
-5. O site irá abrir, só clicar em "Crie uma" para criar uma conta, irá preencher os dados e depois só logar na conta.
+6. O site irá abrir, só clicar em "Crie uma" para criar uma conta, irá preencher os dados e depois só logar na conta.
 
 ### Funcionalidades
 
