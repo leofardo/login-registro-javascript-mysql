@@ -144,7 +144,7 @@ app.post("/sendemail", (req, res) => {
     const email = req.body.email;
     const hash = createHash(16);
 
-    db.query(`UPDATE db_login_registro.usuarios SET alterpassword = '${hash}' WHERE email = ?`, [email],
+    db.query(`UPDATE usuarios SET alterpassword = '${hash}' WHERE email = ?`, [email],
     (err, result) =>{
         if(err){
             console.log(err)
@@ -181,7 +181,7 @@ app.post("/alter", (req, res) => {
     const validate = req.body.validate
 
     bcrypt.hash(password, saltRounds, (error, hash) =>{
-        db.query(`UPDATE db_login_registro.usuarios SET password = ? WHERE email = ? AND alterpassword = ?`, [hash, email, validate],
+        db.query(`UPDATE usuarios SET password = ? WHERE email = ? AND alterpassword = ?`, [hash, email, validate],
         (err, result) =>{
             if(err){
                 res.send(err)
@@ -265,7 +265,7 @@ app.post('/arquivo', upload.single('file'), (req, res) =>{
     });
         
 
-    db.query(`UPDATE db_login_registro.usuarios SET img = ? WHERE idusuarios = ?`, [imagem, id],
+    db.query(`UPDATE usuarios SET img = ? WHERE idusuarios = ?`, [imagem, id],
     (err, result) =>{
         if(err){
             res.send(err)
